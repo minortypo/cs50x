@@ -3,7 +3,7 @@
 
 - #### All weeks
 
-Week 0
+<a href="/week-0">Week 0</a>
 
 Week 1
 

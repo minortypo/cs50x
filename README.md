@@ -5,7 +5,7 @@
 
 <a href="/week-0">Week 0</a>
 
-Week 1
+<a href="/week-1">Week 1</a>
 
 Week 2
 

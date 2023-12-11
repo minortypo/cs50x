@@ -9,7 +9,7 @@
 
 <a href="/week-2">Week 2</a>
 
-Week 3
+<a href="/week-2">Week 3</a>
 
 Week 4
 

@@ -1,0 +1,15 @@
+sort1 uses: bubble sort
+
+How do you know?: Because it takes the shortest time to sort sorted.txt.
+Also, it has a fast runtime for the sorted datasets, but it performes bad on bigger datasets of reversed and random numbers.
+
+sort2 uses: merge sort
+
+How do you know?: Because it takes the shortest time to sort random.txt and it's efficient in all the datasets.
+
+sort3 uses: selection sort
+
+How do you know?: Because it has the longest sorting time.
+It performs poorly on all three .txt files which contains larger datasets(50000) and it's faster while going through the smaller datasets(5000).
+
+Gabriel Palhares.

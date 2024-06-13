@@ -1,6 +1,8 @@
 ## CS50x from Harvard
 ### Problem Sets week per week
 
+Important note: The implementations of the course activities, psets, and labs in this repository are intended solely for reference and to inspire new ideas. Please respect the academic honesty policy and do not reuse them for your own benefit.
+
 - #### All weeks
 
 <a href="/week-0">Week 0</a>

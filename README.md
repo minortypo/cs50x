@@ -15,7 +15,7 @@
 
 <a href="/week-5">Week 5</a>
 
-Week 6
+<a href="/week-6">Week 6</a>
 
 Week 7
 

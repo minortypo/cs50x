@@ -21,7 +21,7 @@ Important note: The implementations of the course activities, psets, and labs in
 
 <a href="/week-7">Week 7</a>
 
-Week 8
+<a href="/week-8">Week 8</a>
 
 Week 9
 

@@ -23,6 +23,6 @@ Important note: The implementations of the course activities, psets, and labs in
 
 <a href="/week-8">Week 8</a>
 
-Week 9
+<a href="/week-9">Week 9</a>
 
 - #### Certificate

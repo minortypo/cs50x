@@ -21,12 +21,14 @@ Important note: The implementations of the course activities, psets, and labs in
 
 <a href="/week-6">Week 6</a> - Python
 
+Artificial Intelligence Lecture
+
 <a href="/week-7">Week 7</a> - SQL
 
 <a href="/week-8">Week 8</a> - HTML, CSS, JavaScript
 
 <a href="/week-9">Week 9</a> - Flask
 
-<a href="/week-10">Week 10</a> - Cybersecurity
+Cybersecurity Lecture
 
 - #### Certificate

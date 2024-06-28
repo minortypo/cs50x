@@ -1,5 +1,3 @@
-<!-- The 'History' Page -->
-
 {% extends "layout.html" %}
 
 {% block title %}
@@ -7,30 +5,26 @@
 {% endblock %}
 
 {% block main %}
-    <div class="table-responsive-md">
-        <table class="table mx-auto w-50">
-            <thead>
-                <tr class="table-active">
-                    <th scope="col">Company Name</th>
-                    <th scope="col">Symbol</th>
-                    <th scope="col">Shares</th>
-                    <th scope="col">Action</th>
-                    <th scope="col">Balance</th>
-                    <th scope="col">Transacted</th>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Total</th>
+                <th>Timestamp</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for transaction in transactions %}
+                <tr>
+                    <td>{{ transaction.symbol }}</td>
+                    <td>{{ transaction.shares }}</td>
+                    <td>{{ transaction.price }}</td>
+                    <td>{{ (transaction.shares * transaction.price)|usd }}</td>
+                    <td>{{ transaction.timestamp }}</td>
                 </tr>
-            </thead>
-            <tbody>
-                {% for stock in portfolio %}
-                <tr class="table-light">
-                    <td>{{ stock["name"] }}</td>
-                    <td>{{ stock["symbol"] }}</td>
-                    <td>{{ stock["shares"] }}</td>
-                    <td>{{ stock["action"] }}</td>
-                    <td>{{ stock["balance"] }}</td>
-                    <td>{{ stock["date"] }}</td>
-                </tr>
-                {% endfor %}
-            </tbody>
-        </table>
-    </div>
+            {% endfor %}
+        </tbody>
+    </table>
 {% endblock %}

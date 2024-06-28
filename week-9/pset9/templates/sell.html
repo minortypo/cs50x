@@ -1,5 +1,3 @@
-<!-- The 'Sell' Page -->
-
 {% extends "layout.html" %}
 
 {% block title %}
@@ -7,15 +5,21 @@
 {% endblock %}
 
 {% block main %}
+    <h1>Sell Shares</h1>
     <form action="/sell" method="post">
-        <label class="mb-3 fw-bold" for="quote">Sell Shares</label>
-        <select class="form-select mx-auto w-auto mb-3" name="symbol">
-            <option disabled="" selected="">Symbol</option>
-            {% for stock in portfolio %}
-            <option>{{ stock["symbol"] }}</option>
-            {% endfor %}
-        </select>
-        <input class="form-control mx-auto w-auto mb-3" name="shares" type="number" placeholder="Shares" min="0" autocomplete="off">
-        <button class="btn btn-primary btn-sm" type="submit">Sell</button>
+        <div class="form-group">
+            <label for="symbol"><strong>Symbol</strong></label>
+            <select class="form-control" id="symbol" name="symbol">
+                <option disabled value="" selected>Select a stock</option>
+                {% for stock in stocks %}
+                    <option value="{{ stock.symbol }}">{{ stock.symbol }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="shares"><strong>Shares</strong></label>
+            <input class="form-control" id="shares" name="shares" placeholder="Number of shares" type="number">
+        </div>
+        <button class="btn btn-primary" type="submit">Sell shares</button>
     </form>
 {% endblock %}

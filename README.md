@@ -31,4 +31,6 @@ Artificial Intelligence Lecture
 
 Cybersecurity Lecture
 
+Final project
+
 - #### Certificate

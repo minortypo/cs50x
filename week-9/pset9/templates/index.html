@@ -5,34 +5,37 @@
 {% endblock %}
 
 {% block main %}
-    <h2>Portfolio</h2>
 
-    <table class="table table-bordered table-striped">
-        <thead class="thead-light">
+    <h1 class="container-fluid d-flex align-items-start">{{ username }}'s Portfolio</h1>
+    <br>
+    <table class="table table-bordered table-striped-columns">
+        <thead>
             <tr>
-                <th>Symbol</th>
-                <th>Shares</th>
-                <th>Price</th>
-                <th>Total Value</th>
+              <th scope="col">Symbol</th>
+              <th scope="col">Shares</th>
+              <th scope="col">Price</th>
+              <th scope="col">Total Value</th>
             </tr>
-        </thead>
-        <tbody>
+          </thead>
+          <tbody>
             {% for stock in stocks %}
-                <tr>
-                    <td>{{ stock.symbol }}</td>
-                    <td>{{ stock.total_shares }}</td>
-                    <td>{{ stock.price }}</td>
-                    <td>{{ (stock.price * stock.total_shares)|usd }}</td>
-                </tr>
+            <tr>
+              <td>{{ stock.symbol }}</td>
+              <td>{{ stock.total_shares }}</td>
+              <td>{{ usd(stock.price) }}</td>
+              <td>{{ usd(stock.value) }}</td>
+            </tr>
             {% endfor %}
             <tr>
-                <td colspan="3" align="right"><strong>Initial Cash</strong></td>
-                <td><strong>{{ total_value|usd }}</strong></td>
+                <td colspan="3" align="right">Cash</td>
+                <td>{{ cash }}</td>
             </tr>
             <tr>
-                <td colspan="3" align="right"><strong>Remaining Cash</strong></td>
-                <td><strong>{{ cash|usd}}</strong></td>
+                <td colspan="3" align="right">Total Value</td>
+                <td>{{ total_value }}</td>
             </tr>
-        </tbody>
+          </tbody>
     </table>
+
 {% endblock %}
+

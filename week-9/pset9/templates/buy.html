@@ -5,12 +5,17 @@
 {% endblock %}
 
 {% block main %}
-    <h1>Buy Shares</h1>
-    <form class="form-group" action="/buy" method="post">
-        <label for="symbol"><strong>Symbol</strong></label>
-        <input class="form-control" type="text" name="symbol" id="symbol" placeholder="Select a stock">
-        <label for="shares"><strong>Shares</strong></label>
-        <input class="form-control" type="text" name="shares" id="shares" placeholder="Number of shares">
-        <button class="btn btn-primary" type="submit">Buy Shares</button>
+
+    <h2>Buy</h2>
+    <br>
+    <form action="/buy" method="post">
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="symbol" id="symbol" placeholder="Symbol" type="text">
+        </div>
+        <div class="mb-3">
+            <input class="form-control mx-auto w-auto" name="shares" id="shares" placeholder="Shares" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Buy</button>
     </form>
+
 {% endblock %}

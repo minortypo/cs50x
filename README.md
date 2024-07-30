@@ -31,7 +31,7 @@ Artificial Intelligence Lecture
 
 Cybersecurity Lecture
 
-Final project
+<a href="https://github.com/minortypo/cs50-final-project">Final project</a>
 
 - #### [Certificate](https://certificates.cs50.io/7e4eee09-32a5-448f-b99c-18190784bfbc.png?size=letter)
 
